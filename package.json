@@ -1,0 +1,43 @@
+{
+  "name": "next-auth-bug-report",
+  "version": "0.1.0",
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf .turbo node_modules",
+    "lint": "eslint",
+    "type-check": "tsc --noEmit",
+    "dev": "ts-node-dev index.ts"
+  },
+  "dependencies": {
+    "@auth/core": "^0.5.1",
+    "@fastify/cookie": "^8.3.0",
+    "@fastify/cors": "^8.2.1",
+    "@linear/sdk": "^2.6.0",
+    "@octokit/app": "^13.1.2",
+    "@octokit/graphql": "^5.0.5",
+    "@prisma/client": "^4.11.0",
+    "@trpc/client": "^10.8.1",
+    "@trpc/server": "^10.8.1",
+    "fastify": "^4.15.0",
+    "fastify-cli": "^5.7.1",
+    "fastify-next-auth": "^0.2.4",
+    "googleapis": "^113.0.0",
+    "octokit": "^2.0.14",
+    "papaparse": "^5.4.0",
+    "stream-chat": "^8.3.0",
+    "superjson": "1.9.1",
+    "uuid": "^9.0.0",
+    "validate-github-token": "^1.1.2",
+    "zod": "^3.20.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "@types/uuid": "^9.0.0",
+    "ably": "^1.2.36",
+    "eslint": "^8.30.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.0.2"
+  }
+}
